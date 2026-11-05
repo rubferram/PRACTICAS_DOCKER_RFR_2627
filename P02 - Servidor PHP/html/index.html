@@ -30,33 +30,24 @@
             </div>
 
             <div class="grupo">
-                <label>Ciclo formativo:</label>
+                <label>Actividad:</label>
 
-                <div class="seleccion-ciclo">
-                    <label class="opcion-ciclo">
-                        <input type="radio" name="curso" value="ASIR" required>
-                        ASIR
-                    </label>
-
-                    <label class="opcion-ciclo">
-                        <input type="radio" name="curso" value="DAM">
-                        DAM
-                    </label>
-
-                    <label class="opcion-ciclo">
-                        <input type="radio" name="curso" value="DAW">
-                        DAW
-                    </label>
+                <div class="seleccion-actividad">
+                    <label for="actividad">Selecciona una actividad:</label>
+                    <select id="actividad" name="actividad" required>
+                        <option value="robótica">Robótica</option>
+                        <option value="desarrollovideojuegos">Desarrollo de videojuegos</option>
+                        <option value="ciberseguridad">Ciberseguridad</option>
+                        <option value="impresion3d">Diseño e impresión 3D</option>
+                    </select>
                 </div>
             </div>
 
             <div class="grupo">
-                <label for="nivel">Curso:</label>
-                <select id="nivel" name="nivel" required>
-                    <option value="">Selecciona el curso</option>
-                    <option value="1">Primero</option>
-                    <option value="2">Segundo</option>
-                </select>
+                <input type="radio" id="turno" name="turno" value="mañana" required>
+                <label for="turno">Turno de mañana</label>
+                <input type="radio" id="turno" name="turno" value="tarde" required>
+                <label for="turno">Turno de tarde</label>
             </div>
 
             <div class="opciones">
